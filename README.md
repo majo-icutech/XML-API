@@ -1,8 +1,8 @@
 # XML-API CCU Addon
 
-[![Release](https://img.shields.io/github/release/hobbyquaker/XML-API.svg)](https://github.com/hobbyquaker/XML-API/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/hobbyquaker/XML-API/latest/total.svg)](https://github.com/hobbyquaker/XML-API/releases/latest)
-[![Issues](https://img.shields.io/github/issues/hobbyquaker/XML-API.svg)](https://github.com/hobbyquaker/XML-API/issues)
+[![Release](https://img.shields.io/github/release/majo-icutech/XML-API.svg)](https://github.com/majo-icutech/XML-API/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/majo-icutech/XML-API/latest/total.svg)](https://github.com/majo-icutech/XML-API/releases/latest)
+[![Issues](https://img.shields.io/github/issues/majo-icutech/XML-API.svg)](https://github.com/majo-icutech/XML-API/issues)
 [![License](https://img.shields.io/badge/license-GPL%203.0-green.svg)](https://opensource.org/licenses/GPL-3.0)
 
 A HomeMatic CCU Addon implementing a xml request functionality as an interface to all homematic deviced available to a CCU device. This addon provides useful scripts that can be accessed via a HTTP request to a CCU device and allows to query and set all e.g. room- and devicetype names.
@@ -22,10 +22,10 @@ http://[CCU_IP]/addons/xmlapi/[ScriptName]
 ```
 where [CCU_IP] corresponds to the IP address or name of your CCU device and [ScriptName] being one of the following tool scripts:
 
-| ScriptName                    | Description / Parameters  
+| ScriptName                    | Description / Parameters
 | ----------------------------- |-------------------------
 | `devicelist.cgi`              | Lists all devices with their channels. Contains name, serial number, device types and ids.<br> `show_internal=1` (outputs all internal channels also)
-| `functionlist.cgi`            | Lists all functions with their channels.     
+| `functionlist.cgi`            | Lists all functions with their channels.    
 | `favoritelist.cgi`            | Lists all favorites and users.<br>`show_datapoint` (outputs also attribute `datapoint_id` and `datapoint_type`)
 | `mastervalue.cgi`             | Returns one or more (1234,5678) devices with their names and values of their master values.<br>`device_id=1234` (returns all master values of device)<br>`requested_name=TEMPERATURE_COMFORT,TEMPERATURE_LOWERING` (returns only master values for specified names)
 | `mastervaluechange.cgi`       | Sets one or more (TEMPERATURE_LOWERING,TEMPERATURE_COMFORT) master values of one or more (1234,5678) devices.<br>`device_id=1234` (sets master values of device)<br>`name=TEMPERATURE_LOWERING` (sets specified master value only)<br>`value=17.0,22.5` (sets master values to specified values)
@@ -83,7 +83,7 @@ http://homematic-forum.de/forum/viewtopic.php?f=26&t=10098&p=75959#p75959
 * Kompatibilität zu RaspberryMatic (HM-RASPBERRYMATIC) hergestellt.
 
 1.10
-* Die XML-API kann jetzt als Addon/Zusatzsoftware über das WebUI installiert/deinstalliert werden 
+* Die XML-API kann jetzt als Addon/Zusatzsoftware über das WebUI installiert/deinstalliert werden
 * statechange.cgi - aendern eines oder mehrere Kanaele-Zustaende
 * sysvar.cgi - Anpassung wegen Variablen Name "Timer>>"
 
@@ -148,4 +148,4 @@ http://homematic-forum.de/forum/viewtopic.php?f=26&t=10098&p=75959#p75959
 * cgi.tcl und once.tcl entfernt
 
 ## Authors
-* jens-maus, Maik (Monty1979), Philipp (ultrah), hobbyquaker, dirch, Uwe (uwe111)
+* majo@icutech.ch, jens-maus, Maik (Monty1979), Philipp (ultrah), hobbyquaker, dirch, Uwe (uwe111)
