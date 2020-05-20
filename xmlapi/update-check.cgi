@@ -1,7 +1,7 @@
 #!/bin/tclsh
 
-set checkURL    "https://raw.githubusercontent.com/hobbyquaker/XML-API/master/VERSION"
-set downloadURL "https://github.com/hobbyquaker/XML-API/releases/latest"
+set checkURL    "https://raw.githubusercontent.com/majo-icutech/XML-API/master/VERSION"
+set downloadURL "https://github.com/majo-icutech/XML-API/releases/latest"
 
 catch {
   set input $env(QUERY_STRING)
