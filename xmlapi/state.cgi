@@ -38,6 +38,8 @@ array set res [rega_script {
            			WriteXML(sDatapointId);
 	               		Write("' value='"); 
         	       		WriteXML(oDatapoint.Value());
+                        Write("' timestamp='");
+                        WriteXML(oDatapoint.Timestamp().ToInteger());
                			Write("'/>");
            		} 
         
